@@ -1,11 +1,11 @@
 const Gallery = () => {
     const images = [
-      "gallery1.jpg",
-      "gallery2.jpg",
-      "gallery3.jpg",
-      "gallery4.jpg",
-      "gallery5.jpg",
-      "gallery6.jpg"
+      "gallery1.webp",
+      "gallery2.webp",
+      "gallery3.webp",
+      "gallery4.webp",
+      "gallery5.webp",
+      "gallery6.webp"
     ];
   
     return (
@@ -18,6 +18,7 @@ const Gallery = () => {
                 key={index}
                 src={`/images/${img}`}
                 alt={`Gallery ${index}`}
+                loading = "lazy"
                 className="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />
             ))}
